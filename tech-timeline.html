@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECHNOS — Technology Timeline</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tech-timelinestyle.css">
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+
+<nav>
+  <a href="tech-index.html" class="nav-back">← HOME</a>
+  <a href="tech-index.html" class="nav-logo">TECH<span>NOS</span></a>
+  <div class="nav-era-dots" id="eraDots"></div>
+</nav>
+
+<div class="hero">
+  <p class="hero-tag">// MODULE_01</p>
+  <h1 class="hero-title">TECHNOLOGY TIMELINE</h1>
+  <p class="hero-sub">300,000 BCE → PRESENT DAY</p>
+  <p class="hero-desc">From the first stone tool to the last large language model. Every invention, every breakthrough, every moment where human ingenuity bent the arc of possibility.</p>
+  <div class="era-nav" id="eraBtns"></div>
+</div>
+
+<div class="timeline-wrap" id="timelineWrap"></div>
+
+<!-- ASK THE ENGINEER -->
+<section class="ask-section">
+  <div class="ask-inner">
+    <h2 class="ask-title">ASK THE ENGINEER</h2>
+    <p class="ask-sub">// ANY QUESTION ABOUT TECHNOLOGY HISTORY</p>
+    <div class="quick-qs">
+      <button class="q-btn" onclick="ask('Why did Silicon Valley become the center of tech?')">Why Silicon Valley?</button>
+      <button class="q-btn" onclick="ask('How did the internet actually get built?')">How was the internet built?</button>
+      <button class="q-btn" onclick="ask('What is the most underrated invention in history?')">Most underrated invention?</button>
+      <button class="q-btn" onclick="ask('How does a transistor work?')">How does a transistor work?</button>
+      <button class="q-btn" onclick="ask('What caused the dot-com crash?')">The dot-com crash?</button>
+      <button class="q-btn" onclick="ask('How did open source change software?')">Open source revolution?</button>
+      <button class="q-btn" onclick="ask('What makes AI different from previous tech revolutions?')">AI vs past revolutions?</button>
+    </div>
+    <div class="chat-shell">
+      <div class="chat-header">
+        <div class="ch-dot" style="background:#FF3B30"></div>
+        <div class="ch-dot" style="background:#FFB800"></div>
+        <div class="ch-dot" style="background:#00FF41"></div>
+        <span class="ch-title">TECHNOS_TERMINAL — Technology History Archive</span>
+      </div>
+      <div class="chat-msgs" id="chatMsgs">
+        <div class="cmsg assistant">
+          <div class="cmsg-av">AI</div>
+          <div class="cmsg-bubble"><strong>Archive online.</strong><br><br>I have the complete technology record — from the first flint knapped by Homo sapiens to the latest transformer architecture. Ask me anything: how something works, why an invention mattered, the story behind a breakthrough, the people involved, the unintended consequences.<br><br>Technology is not a series of disconnected inventions — it's a conversation across centuries. What do you want to understand?</div>
+        </div>
+      </div>
+      <div class="chat-input-row">
+        <input type="text" id="chatInput" placeholder="// ask anything about technology..." onkeydown="if(event.key==='Enter')sendMsg()"/>
+        <button id="chatSend" onclick="sendMsg()">▶</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="tech-index.html">Home</a>
+    <a href="tech-foundations.html">Foundations</a>
+    <a href="tech-people.html">Pioneers</a>
+    <a href="tech-domains.html">Domains</a>
+    <a href="tech-learn.html">Learn</a>
+  </div>
+  <p class="footer-q">// "The advance of technology is based on making it fit in so that you don't really even notice it." — Bill Gates</p>
+</footer>
+
+<script src="tech-timeline.js"></script>
+</body>
+</html>

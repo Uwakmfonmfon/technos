@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECHNOS — The Complete Technology Universe</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tech-indexstyle.css">
+</head>
+<body>
+
+<!-- BOOT SCREEN -->
+<div class="boot-screen" id="bootScreen">
+  <div class="boot-logo">TECHNOS</div>
+  <div class="boot-lines" id="bootLines"></div>
+  <div class="boot-bar-wrap"><div class="boot-bar" id="bootBar"></div></div>
+</div>
+
+<!-- CIRCUIT BACKGROUND -->
+<div class="circuit-bg">
+<svg viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <defs><pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(0,255,65,0.04)" stroke-width="0.5"/></pattern></defs>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  <!-- Circuit traces -->
+  <g stroke="rgba(0,255,65,0.06)" stroke-width="1" fill="none">
+    <path d="M 0 200 H 300 V 150 H 500 V 200 H 800"/>
+    <path d="M 200 0 V 150 H 350 V 300 H 200 V 500"/>
+    <path d="M 1400 300 H 1100 V 250 H 900 V 400 H 1100 V 600"/>
+    <path d="M 600 900 V 600 H 700 V 450 H 800 V 600 H 1000"/>
+    <path d="M 0 700 H 200 V 600 H 400 V 700 H 600"/>
+    <path d="M 700 0 V 200 H 800 V 350 H 900"/>
+    <path d="M 100 900 V 750 H 300 V 650 H 500"/>
+    <path d="M 1200 0 V 200 H 1100 V 350 H 1300 V 200"/>
+  </g>
+  <!-- Circuit nodes -->
+  <g fill="rgba(0,255,65,0.1)">
+    <circle cx="300" cy="200" r="4"/><circle cx="500" cy="200" r="4"/>
+    <circle cx="200" cy="150" r="3"/><circle cx="350" cy="300" r="3"/>
+    <circle cx="1100" cy="250" r="4"/><circle cx="900" cy="400" r="4"/>
+    <circle cx="700" cy="450" r="3"/><circle cx="800" cy="350" r="3"/>
+    <circle cx="200" cy="600" r="4"/><circle cx="400" cy="700" r="3"/>
+  </g>
+</svg>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="tech-index.html" class="nav-logo">TECH<span>NOS</span></a>
+  <div class="nav-links">
+    <a href="tech-timeline.html" class="nav-link">Timeline</a>
+    <a href="tech-foundations.html" class="nav-link">Foundations</a>
+    <a href="tech-people.html" class="nav-link">People</a>
+    <a href="tech-domains.html" class="nav-link">Domains</a>
+    <a href="tech-learn.html" class="nav-link">Learn</a>
+  </div>
+  <div class="nav-status"><div class="status-dot"></div><span>SYSTEM ONLINE</span></div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-tag">// THE COMPLETE TECHNOLOGY UNIVERSE</p>
+  <h1 class="hero-title">
+    TECH<span class="outline">NOS</span>
+  </h1>
+  <p class="hero-sub">FROM FIRE TO ARTIFICIAL INTELLIGENCE</p>
+  <p class="hero-desc">Every invention. Every breakthrough. Every person who bent the arc of human capability. From the first tool to the last algorithm — this is how technology built the world you live in.</p>
+  <div class="hero-stats">
+    <div class="h-stat"><span class="h-stat-num">300K</span><span class="h-stat-label">Years of Tech</span></div>
+    <div class="h-stat"><span class="h-stat-num">6</span><span class="h-stat-label">Worlds</span></div>
+    <div class="h-stat"><span class="h-stat-num">80+</span><span class="h-stat-label">Pioneers</span></div>
+    <div class="h-stat"><span class="h-stat-num">∞</span><span class="h-stat-label">To Learn</span></div>
+  </div>
+  <div class="hero-btns">
+    <a href="tech-timeline.html" class="hero-btn primary">ENTER THE ARCHIVE →</a>
+    <a href="#tracker" class="hero-btn ghost">MY LEARNING PATH</a>
+  </div>
+</section>
+
+<!-- PORTALS -->
+<section class="portals-section">
+  <div class="section-header reveal">
+    <span class="section-tag">// NAVIGATE</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="portals-grid">
+    <a href="tech-timeline.html" class="portal-card reveal" style="color:var(--timeline)">
+      <span class="pc-id">MODULE_01</span>
+      <span class="pc-icon">📡</span>
+      <h2 class="pc-title">The Technology Timeline</h2>
+      <p class="pc-desc">Fire to AI. Every era. Every invention that changed everything. Understand how technology built itself, layer by layer, across 300,000 years.</p>
+      <div class="pc-tags">
+        <span class="pc-tag" style="border-color:var(--timeline);color:var(--timeline)">Prehistoric</span>
+        <span class="pc-tag" style="border-color:var(--timeline);color:var(--timeline)">Industrial</span>
+        <span class="pc-tag" style="border-color:var(--timeline);color:var(--timeline)">Digital Age</span>
+        <span class="pc-tag" style="border-color:var(--timeline);color:var(--timeline)">AI Era</span>
+      </div>
+      <span class="pc-arrow" style="color:var(--timeline)">ACCESS MODULE →</span>
+    </a>
+
+    <a href="tech-foundations.html" class="portal-card reveal" style="color:var(--foundations)">
+      <span class="pc-id">MODULE_02</span>
+      <span class="pc-icon">⚙️</span>
+      <h2 class="pc-title">How Computers Work</h2>
+      <p class="pc-desc">Hardware, software, networks, algorithms, data structures, operating systems. The bedrock every technologist must understand before building anything.</p>
+      <div class="pc-tags">
+        <span class="pc-tag" style="border-color:var(--foundations);color:var(--foundations)">Hardware</span>
+        <span class="pc-tag" style="border-color:var(--foundations);color:var(--foundations)">Algorithms</span>
+        <span class="pc-tag" style="border-color:var(--foundations);color:var(--foundations)">Networks</span>
+        <span class="pc-tag" style="border-color:var(--foundations);color:var(--foundations)">Data</span>
+      </div>
+      <span class="pc-arrow" style="color:var(--foundations)">ACCESS MODULE →</span>
+    </a>
+
+    <a href="tech-people.html" class="portal-card reveal" style="color:var(--people)">
+      <span class="pc-id">MODULE_03</span>
+      <span class="pc-icon">🧑‍💻</span>
+      <h2 class="pc-title">The Pioneers</h2>
+      <p class="pc-desc">Ada Lovelace. Alan Turing. Grace Hopper. Tim Berners-Lee. The people who wrote the code of the modern world — their stories, their obsessions, their gifts.</p>
+      <div class="pc-tags">
+        <span class="pc-tag" style="border-color:var(--people);color:var(--people)">Inventors</span>
+        <span class="pc-tag" style="border-color:var(--people);color:var(--people)">Scientists</span>
+        <span class="pc-tag" style="border-color:var(--people);color:var(--people)">Builders</span>
+        <span class="pc-tag" style="border-color:var(--people);color:var(--people)">Visionaries</span>
+      </div>
+      <span class="pc-arrow" style="color:var(--people)">ACCESS MODULE →</span>
+    </a>
+
+    <a href="tech-domains.html" class="portal-card reveal" style="color:var(--domains)">
+      <span class="pc-id">MODULE_04</span>
+      <span class="pc-icon">🔬</span>
+      <h2 class="pc-title">Tech Domains</h2>
+      <p class="pc-desc">AI & Machine Learning. Cybersecurity. Web Development. Data Science. Cloud Computing. Robotics. Every field — what it is, what it does, why it matters.</p>
+      <div class="pc-tags">
+        <span class="pc-tag" style="border-color:var(--domains);color:var(--domains)">AI/ML</span>
+        <span class="pc-tag" style="border-color:var(--domains);color:var(--domains)">Security</span>
+        <span class="pc-tag" style="border-color:var(--domains);color:var(--domains)">Cloud</span>
+        <span class="pc-tag" style="border-color:var(--domains);color:var(--domains)">Robotics</span>
+      </div>
+      <span class="pc-arrow" style="color:var(--domains)">ACCESS MODULE →</span>
+    </a>
+
+    <a href="tech-learn.html" class="portal-card reveal" style="color:var(--learn)">
+      <span class="pc-id">MODULE_05</span>
+      <span class="pc-icon">📚</span>
+      <h2 class="pc-title">Learn Tech</h2>
+      <p class="pc-desc">Roadmaps for every discipline. The 50 essential books. The best free and paid courses. From absolute beginner to deep expert — your personalized path.</p>
+      <div class="pc-tags">
+        <span class="pc-tag" style="border-color:var(--learn);color:var(--learn)">Roadmaps</span>
+        <span class="pc-tag" style="border-color:var(--learn);color:var(--learn)">50 Books</span>
+        <span class="pc-tag" style="border-color:var(--learn);color:var(--learn)">Courses</span>
+        <span class="pc-tag" style="border-color:var(--learn);color:var(--learn)">Projects</span>
+      </div>
+      <span class="pc-arrow" style="color:var(--learn)">ACCESS MODULE →</span>
+    </a>
+
+    <a href="#daily" class="portal-card reveal" style="color:var(--tools)">
+      <span class="pc-id">MODULE_06</span>
+      <span class="pc-icon">⚡</span>
+      <h2 class="pc-title">Daily Transmission</h2>
+      <p class="pc-desc">One tech fact. One insight from a pioneer. One question to think like an engineer. Fresh every day — the mental diet that builds a technology mind.</p>
+      <div class="pc-tags">
+        <span class="pc-tag" style="border-color:var(--tools);color:var(--tools)">Daily Facts</span>
+        <span class="pc-tag" style="border-color:var(--tools);color:var(--tools)">Insights</span>
+        <span class="pc-tag" style="border-color:var(--tools);color:var(--tools)">Questions</span>
+      </div>
+      <span class="pc-arrow" style="color:var(--tools)">ACCESS MODULE →</span>
+    </a>
+  </div>
+</section>
+
+<!-- DAILY TRANSMISSION -->
+<section class="daily-section" id="daily">
+  <div class="daily-inner">
+    <div class="section-header reveal">
+      <span class="section-tag">// DAILY_TRANSMISSION</span>
+      <div class="section-line"></div>
+      <span id="dailyDate" style="font-family:'Share Tech Mono',monospace;font-size:0.58rem;color:var(--green3);white-space:nowrap">—</span>
+    </div>
+    <div class="daily-grid">
+      <div class="daily-card reveal" style="border-top:2px solid var(--timeline)">
+        <span class="daily-card-type" style="color:var(--timeline)">⚡ TECH FACT</span>
+        <p class="daily-card-text" id="factText">Loading...</p>
+        <span class="daily-card-source" id="factSource">—</span>
+      </div>
+      <div class="daily-card reveal" style="border-top:2px solid var(--people)">
+        <span class="daily-card-type" style="color:var(--people)">👤 PIONEER INSIGHT</span>
+        <p class="daily-card-text" id="insightText">Loading...</p>
+        <span class="daily-card-source" id="insightSource">—</span>
+      </div>
+      <div class="daily-card reveal" style="border-top:2px solid var(--foundations)">
+        <span class="daily-card-type" style="color:var(--foundations)">🔷 THINK LIKE AN ENGINEER</span>
+        <p class="daily-card-question" id="questionText">Loading...</p>
+      </div>
+    </div>
+    <button class="refresh-btn" onclick="loadDaily()">↻ NEW TRANSMISSION</button>
+  </div>
+</section>
+
+<!-- TRACKER -->
+<section class="tracker-section" id="tracker">
+  <div class="tracker-inner">
+    <div class="section-header reveal">
+      <span class="section-tag">// MY_LEARNING_PATH</span>
+      <div class="section-line"></div>
+      <span style="font-family:'Share Tech Mono',monospace;font-size:0.55rem;color:var(--green3)">PROGRESS SAVED IN BROWSER</span>
+    </div>
+    <div class="tracker-grid" id="trackerGrid"></div>
+    <div class="notes-block reveal">
+      <span class="notes-label">// NOTES & OBSERVATIONS</span>
+      <textarea class="notes-ta" id="notesTA" rows="3" placeholder="// What are you learning? What concepts clicked? What questions remain?..." oninput="autoSave()"></textarea>
+    </div>
+    <div class="tracker-actions reveal">
+      <span class="saved-msg" id="savedMsg">✓ SAVED TO MEMORY</span>
+      <div class="act-btns">
+        <button class="act-btn ghost" onclick="resetTracker()">RESET</button>
+        <button class="act-btn primary" onclick="saveTracker()">SAVE PROGRESS</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="footer-logo">TECHNOS // THE COMPLETE TECHNOLOGY UNIVERSE</p>
+  <div class="footer-links">
+    <a href="tech-timeline.html">Timeline</a>
+    <a href="tech-foundations.html">Foundations</a>
+    <a href="tech-people.html">Pioneers</a>
+    <a href="tech-domains.html">Domains</a>
+    <a href="tech-learn.html">Learn</a>
+  </div>
+  <p class="footer-quote">// "Any sufficiently advanced technology is indistinguishable from magic." — Arthur C. Clarke</p>
+</footer>
+
+<script src="tech-indexscript.js"></script>
+</body>
+</html>

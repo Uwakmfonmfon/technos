@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECHNOS — Tech Domains</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tech-domainstyle.css">
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+<nav>
+  <a href="tech-index.html" class="nav-back">← HOME</a>
+  <a href="tech-index.html" class="nav-logo">TECH<span>NOS</span></a>
+</nav>
+
+<div class="hero">
+  <p class="hero-tag">// MODULE_04</p>
+  <h1 class="hero-title">TECH DOMAINS</h1>
+  <p class="hero-sub">EVERY FIELD · WHAT IT IS · WHY IT MATTERS</p>
+  <p class="hero-desc">AI. Cybersecurity. Web Development. Data Science. Cloud. Robotics. Blockchain. IoT. Every major technology domain — what it does, who builds it, what you need to learn it, and where it's going.</p>
+</div>
+
+<div class="domain-selector">
+  <div class="ds-grid" id="dsGrid"></div>
+</div>
+
+<div class="main-wrap" id="mainWrap"></div>
+
+<section class="ask-section">
+  <div class="ask-inner">
+    <h2 class="ask-title">ASK THE DOMAIN EXPERT</h2>
+    <p class="ask-sub">// QUESTIONS ABOUT ANY TECH FIELD</p>
+    <div class="quick-qs">
+      <button class="q-btn" onclick="ask('Should I learn AI/ML or stick to web development?')">AI/ML vs web dev?</button>
+      <button class="q-btn" onclick="ask('What is the fastest growing tech domain right now?')">Fastest growing domain?</button>
+      <button class="q-btn" onclick="ask('How does someone transition into cybersecurity?')">Transition to security?</button>
+      <button class="q-btn" onclick="ask('What will AI replace in software development?')">AI replacing devs?</button>
+      <button class="q-btn" onclick="ask('What is the difference between data science and data engineering?')">Data science vs engineering?</button>
+      <button class="q-btn" onclick="ask('Is blockchain technology actually useful beyond crypto?')">Blockchain beyond crypto?</button>
+    </div>
+    <div class="chat-shell">
+      <div class="chat-header">
+        <div class="ch-dot" style="background:#FF3B30"></div>
+        <div class="ch-dot" style="background:#FFB800"></div>
+        <div class="ch-dot" style="background:#00FF41"></div>
+        <span class="ch-title">TECHNOS_TERMINAL — Domains Module</span>
+      </div>
+      <div class="chat-msgs" id="chatMsgs">
+        <div class="cmsg assistant">
+          <div class="cmsg-av">AI</div>
+          <div class="cmsg-bubble"><strong>Domain expert online.</strong><br><br>Ask me anything about technology fields — how to get into them, what they pay, what skills matter, where they're heading, or how they compare. I'll give you honest, specific answers.</div>
+        </div>
+      </div>
+      <div class="chat-input-row">
+        <input type="text" id="chatInput" placeholder="// ask about any tech domain..." onkeydown="if(event.key==='Enter')sendMsg()"/>
+        <button id="chatSend" onclick="sendMsg()">▶</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="tech-index.html">Home</a>
+    <a href="tech-timeline.html">Timeline</a>
+    <a href="tech-foundations.html">Foundations</a>
+    <a href="tech-people.html">Pioneers</a>
+    <a href="tech-learn.html">Learn</a>
+  </div>
+  <p class="footer-q">// "Any sufficiently advanced technology is indistinguishable from magic." — Arthur C. Clarke</p>
+</footer>
+
+<script src="tech-domain.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECHNOS — Learn Tech</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tech-learnstyle.css">
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+<nav>
+  <a href="tech-index.html" class="nav-back">← HOME</a>
+  <a href="tech-index.html" class="nav-logo">TECH<span>NOS</span></a>
+</nav>
+
+<div class="hero">
+  <p class="hero-tag">// MODULE_05</p>
+  <h1 class="hero-title">LEARN TECH</h1>
+  <p class="hero-sub">ROADMAPS · BOOKS · COURSES · PROJECTS · AI MENTOR</p>
+  <p class="hero-desc">From absolute beginner to domain expert. Curated learning paths, the 50 essential books, the best courses, and projects that build real skills.</p>
+</div>
+
+<div class="tab-nav">
+  <button class="tab-btn active" onclick="switchTab('roadmaps')">ROADMAPS</button>
+  <button class="tab-btn" onclick="switchTab('books')">50 BOOKS</button>
+  <button class="tab-btn" onclick="switchTab('courses')">COURSES</button>
+  <button class="tab-btn" onclick="switchTab('projects')">PROJECTS</button>
+  <button class="tab-btn" onclick="switchTab('mentor')">AI MENTOR</button>
+</div>
+
+<!-- ROADMAPS TAB -->
+<div class="tab-panel active" id="tab-roadmaps">
+  <div class="sec-header reveal"><span class="sec-tag">// LEARNING ROADMAPS</span><div class="sec-line"></div></div>
+  <div class="roadmap-selector reveal" id="rmSelector"></div>
+  <div id="rmContent"></div>
+</div>
+
+<!-- BOOKS TAB -->
+<div class="tab-panel" id="tab-books">
+  <div class="sec-header reveal"><span class="sec-tag">// THE 50 ESSENTIAL BOOKS</span><div class="sec-line"></div></div>
+  <div class="books-grid reveal" id="booksGrid"></div>
+</div>
+
+<!-- COURSES TAB -->
+<div class="tab-panel" id="tab-courses">
+  <div class="sec-header reveal"><span class="sec-tag">// BEST COURSES</span><div class="sec-line"></div></div>
+  <div class="courses-filter reveal" id="coursesFilter"></div>
+  <div class="courses-grid" id="coursesGrid"></div>
+</div>
+
+<!-- PROJECTS TAB -->
+<div class="tab-panel" id="tab-projects">
+  <div class="sec-header reveal"><span class="sec-tag">// BUILD THESE PROJECTS</span><div class="sec-line"></div></div>
+  <div class="projects-grid reveal" id="projectsGrid"></div>
+</div>
+
+<!-- MENTOR TAB -->
+<div class="tab-panel" id="tab-mentor">
+  <div class="sec-header reveal"><span class="sec-tag">// AI LEARNING MENTOR</span><div class="sec-line"></div></div>
+  <div class="mentor-section reveal">
+    <div class="mentor-header">
+      <div class="mh-dot" style="background:#FF3B30"></div>
+      <div class="mh-dot" style="background:#FFB800"></div>
+      <div class="mh-dot" style="background:#00FF41"></div>
+      <span class="mh-title">TECHNOS_MENTOR — Personalized Learning Advisor</span>
+    </div>
+    <div class="mentor-quick">
+      <button class="mq-btn" onclick="ask('I am a complete beginner. Where should I start learning programming?')">I\'m a complete beginner</button>
+      <button class="mq-btn" onclick="ask('I know basic Python. What should I learn next to get a job in data science?')">Python → Data Science path</button>
+      <button class="mq-btn" onclick="ask('I want to get into AI and ML. What is the fastest path from beginner to employable?')">Fast track to AI/ML</button>
+      <button class="mq-btn" onclick="ask('I want to switch careers into software development. I have 1 year. What is the plan?')">Career switch in 1 year</button>
+      <button class="mq-btn" onclick="ask('What are the most important CS fundamentals that self-taught developers tend to miss?')">CS fundamentals I\'m missing</button>
+      <button class="mq-btn" onclick="ask('Compare the top programming languages and tell me which to learn first based on my goal of getting a job quickly')">Which language first?</button>
+      <button class="mq-btn" onclick="ask('How do I build a portfolio that actually gets interviews as a new developer?')">Build a portfolio</button>
+      <button class="mq-btn" onclick="ask('What is the difference between frontend, backend, and full stack, and which pays more?')">Frontend vs backend?</button>
+    </div>
+    <div class="chat-msgs" id="chatMsgs">
+      <div class="cmsg assistant">
+        <div class="cmsg-av">AI</div>
+        <div class="cmsg-bubble"><strong>Learning mentor online.</strong><br><br>Tell me where you are and where you want to go. I'll give you a specific, honest path — what to learn, in what order, for how long, and what to build.<br><br>No generic advice. Tell me your situation and I'll tell you exactly what to do.</div>
+      </div>
+    </div>
+    <div class="chat-input-row">
+      <input type="text" id="chatInput" placeholder="// tell me your situation and goal..." onkeydown="if(event.key==='Enter')sendMsg()"/>
+      <button id="chatSend" onclick="sendMsg()">▶</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="tech-index.html">Home</a>
+    <a href="tech-timeline.html">Timeline</a>
+    <a href="tech-foundations.html">Foundations</a>
+    <a href="tech-people.html">Pioneers</a>
+    <a href="tech-domains.html">Domains</a>
+  </div>
+  <p class="footer-q">// "Programs must be written for people to read, and only incidentally for machines to execute." — Abelson & Sussman</p>
+</footer>
+
+<script src="tech-learn.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECHNOS — How Computers Work</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tech-foundationstyle.css">
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+<nav>
+  <a href="tech-index.html" class="nav-back">← HOME</a>
+  <a href="tech-index.html" class="nav-logo">TECH<span>NOS</span></a>
+  <div class="nav-tabs">
+    <button class="nav-tab" onclick="location.href='tech-timeline.html'">TIMELINE</button>
+    <button class="nav-tab active">FOUNDATIONS</button>
+    <button class="nav-tab" onclick="location.href='tech-people.html'">PEOPLE</button>
+    <button class="nav-tab" onclick="location.href='tech-domains.html'">DOMAINS</button>
+    <button class="nav-tab" onclick="location.href='tech-learn.html'">LEARN</button>
+  </div>
+</nav>
+
+<div class="hero">
+  <p class="hero-tag">// MODULE_02</p>
+  <h1 class="hero-title">HOW COMPUTERS WORK</h1>
+  <p class="hero-sub">BINARY → SILICON → SOFTWARE → INTERNET</p>
+  <p class="hero-desc">From the physics of electrons to the architecture of the internet — understand the stack that every piece of technology is built on. The bedrock of the digital world.</p>
+</div>
+
+<div class="topic-nav" id="topicNav"></div>
+<div class="main-wrap" id="mainWrap"></div>
+
+<section class="ask-section">
+  <div class="ask-inner">
+    <h2 class="ask-title">ASK THE ENGINEER</h2>
+    <p class="ask-sub">// EXPLAIN ANYTHING ABOUT HOW TECHNOLOGY WORKS</p>
+    <div class="quick-qs">
+      <button class="q-btn" onclick="ask('Explain how a CPU actually executes a program, step by step')">How does a CPU execute code?</button>
+      <button class="q-btn" onclick="ask('What is the difference between RAM and a hard drive?')">RAM vs hard drive?</button>
+      <button class="q-btn" onclick="ask('How does the internet actually route data from one computer to another?')">How does internet routing work?</button>
+      <button class="q-btn" onclick="ask('What is recursion and why is it powerful?')">What is recursion?</button>
+      <button class="q-btn" onclick="ask('Explain Big O notation as simply as possible')">Big O notation?</button>
+      <button class="q-btn" onclick="ask('How does HTTPS encryption actually work?')">How does HTTPS work?</button>
+      <button class="q-btn" onclick="ask('What is the difference between a process and a thread?')">Process vs thread?</button>
+    </div>
+    <div class="chat-shell">
+      <div class="chat-header">
+        <div class="ch-dot" style="background:#FF3B30"></div>
+        <div class="ch-dot" style="background:#FFB800"></div>
+        <div class="ch-dot" style="background:#00FF41"></div>
+        <span class="ch-title">TECHNOS_TERMINAL — Foundations Module</span>
+      </div>
+      <div class="chat-msgs" id="chatMsgs">
+        <div class="cmsg assistant">
+          <div class="cmsg-av">AI</div>
+          <div class="cmsg-bubble"><strong>Foundations module online.</strong><br><br>I can explain anything from how transistors switch to how TCP/IP routes packets across the globe. I use analogies, clear language, and real examples — no jargon without explanation.<br><br>Ask me how something works. The deeper you want to go, the deeper we'll go.</div>
+        </div>
+      </div>
+      <div class="chat-input-row">
+        <input type="text" id="chatInput" placeholder="// how does _____ work?" onkeydown="if(event.key==='Enter')sendMsg()"/>
+        <button id="chatSend" onclick="sendMsg()">▶</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="tech-index.html">Home</a>
+    <a href="tech-timeline.html">Timeline</a>
+    <a href="tech-people.html">Pioneers</a>
+    <a href="tech-domains.html">Domains</a>
+    <a href="tech-learn.html">Learn</a>
+  </div>
+  <p class="footer-q">// "First, solve the problem. Then, write the code." — John Johnson</p>
+</footer>
+
+<script src="tech-foundation.js"></script>
+</body>
+</html>

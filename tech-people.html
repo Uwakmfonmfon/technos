@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECHNOS — The Pioneers</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tech-peoplestyle.css">
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+<nav>
+  <a href="tech-index.html" class="nav-back">← HOME</a>
+  <a href="tech-index.html" class="nav-logo">TECH<span>NOS</span></a>
+  <input type="text" class="nav-search" id="searchInput" placeholder="// search pioneers..." oninput="filterPeople()"/>
+</nav>
+<div class="hero">
+  <p class="hero-tag">// MODULE_03</p>
+  <h1 class="hero-title">THE PIONEERS</h1>
+  <p class="hero-sub">THE PEOPLE WHO WROTE THE CODE OF THE WORLD</p>
+  <p class="hero-desc">Behind every breakthrough is a person — often overlooked, often misunderstood, almost always obsessed. These are the minds that built the digital world.</p>
+</div>
+<div class="filter-row" id="filterRow"></div>
+<div class="people-wrap">
+  <div class="people-grid" id="peopleGrid"></div>
+</div>
+<footer>
+  <div class="footer-links">
+    <a href="tech-index.html">Home</a>
+    <a href="tech-timeline.html">Timeline</a>
+    <a href="tech-foundations.html">Foundations</a>
+    <a href="tech-domains.html">Domains</a>
+    <a href="tech-learn.html">Learn</a>
+  </div>
+  <p class="footer-q">// "The computer was born to solve problems that did not exist before." — Bill Gates</p>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-top" id="modalTop"></div>
+    <div class="modal-inner">
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+      <p class="modal-era" id="mEra">—</p>
+      <h2 class="modal-name" id="mName">—</h2>
+      <p class="modal-role" id="mRole">—</p>
+      <div class="modal-story" id="mStory"></div>
+      <div class="modal-quote" id="mQuote">
+        <p class="mq-text" id="mQuoteText">—</p>
+        <p class="mq-attr" id="mQuoteAttr">—</p>
+      </div>
+      <div class="modal-contribs">
+        <p class="mc-label">// KEY CONTRIBUTIONS</p>
+        <div class="mc-chips" id="mChips"></div>
+      </div>
+      <div class="modal-ai-section">
+        <p class="mas-label">// GO DEEPER</p>
+        <p class="mas-q" id="mAiQ">—</p>
+        <button class="mas-btn" id="masBtn" onclick="deepDive()">✦ EXPLORE THIS PIONEER</button>
+        <div class="mas-response" id="masResponse"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="tech-people.js"></script>
+</body>
+</html>
